@@ -10,4 +10,5 @@ download_plugin() {
   [[ "$#" != 2 ]] && return 1
   local url=$1; local name=$2;
   _clone_git $url $ZSH_CUSTOM/plugins/$name
+  _map_put plugins $name enabled
 }
