@@ -1,5 +1,6 @@
 _init_plugins() {
-  for plugin ($ZSH/plugins/*); do
+  local plugin_path=$1
+  for plugin ($plugin_path/*); do
     local plugin_name=$(basename $plugin)
     _map_exists plugins $plugin_name
     [[ $? -ne 0 ]] && _map_put plugins $plugin_name disabled
@@ -46,14 +47,17 @@ disable_plugin() {
 
 _populate_enabled_plugins() {
   for plugin ($(list_enabled_plugins)); do
-    fpath=($ZSH/plugins/$plugin $fpath)
-  done
-
-  for plugin ($(list_enabled_plugins)); do
-    source $ZSH/plugins/$plugin/$plugin.plugin.zsh
+    if [[ -f $ZSH/plugins/$plugin/$plugin.plugin.zsh ]]; then
+      fpath=($ZSH/plugins/$plugin $fpath)
+      source $ZSH/plugins/$plugin/$plugin.plugin.zsh
+    elif [[ -f $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh ]]; then
+      path=($ZSH_CUSTOM/plugins/$plugin $fpath)
+      source $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh
+    fi
   done
 }
 
-_init_plugins
+_init_plugins $ZSH/plugins
+_init_plugins $ZSH_CUSTOM/plugins
 _pre_enable_plugins
 _populate_enabled_plugins
