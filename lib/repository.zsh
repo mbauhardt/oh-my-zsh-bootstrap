@@ -30,7 +30,7 @@ list_plugins() {
 }
 
 list_themes() {
-  for theme ($ZSH/themes/*); do
+  for theme ($ZSH/themes/*zsh-theme $ZSH_CUSTOM/*zsh-theme(N)); do
     local theme_name=$(basename $theme | awk -F '.' '{print $1}')
     local selected_theme=$(_map_get themes theme)
     if [[ $selected_theme = $theme_name ]]; then

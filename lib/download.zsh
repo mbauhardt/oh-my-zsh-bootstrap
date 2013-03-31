@@ -17,5 +17,6 @@ download_theme() {
   [[ "$#" != 2 ]] && return 1
   local url=$1; local theme=$2;
   _clone_git $url $ZSH_CUSTOM/themes/$theme
+  ln -s $ZSH_CUSTOM/themes/$theme/$theme.zsh-theme $ZSH_CUSTOM/$theme.zsh-theme
   _map_put themes theme $theme
 }
