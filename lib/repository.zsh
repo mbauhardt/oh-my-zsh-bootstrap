@@ -74,7 +74,7 @@ _populate_enabled_plugins() {
       fpath=($ZSH/plugins/$plugin $fpath)
       source $ZSH/plugins/$plugin/$plugin.plugin.zsh
     elif [[ -f $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh ]]; then
-      path=($ZSH_CUSTOM/plugins/$plugin $fpath)
+      fpath=($ZSH_CUSTOM/plugins/$plugin $fpath)
       source $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh
     fi
   done
