@@ -10,6 +10,11 @@ With that plugin you can
 * enable/disable theme
 * download themes
 
+## Installation
+### Automatic Way
+
+### Manual Way
+
 ## Usage
 ### List Plugins
 
