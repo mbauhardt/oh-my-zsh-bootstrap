@@ -33,6 +33,9 @@ With the command above you can list all plugins which exists under $ZSH/plugins 
     download_plugin <url> <name>
 
 
+## Feedback / Contact
+
+Please use [Github's Issue Tracker](https://github.com/mbauhardt/oh-my-zsh-bootstrap/issues) or ping me on twitter [@mbauhardt](https://twitter.com/mbauhardt)
 
 
 
