@@ -19,6 +19,8 @@ With the command above you can list all plugins which exists under $ZSH/plugins 
 
     list_enabled_plugins
     
+### Enable Plugins
+    
     enable_plugin <plugin>
     
     download_plugin <url> <name>
