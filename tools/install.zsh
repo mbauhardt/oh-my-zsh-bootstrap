@@ -3,7 +3,7 @@
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 if [[ -d $HOME/.oh-my-zsh/custom/plugins/oh-my-zsh-bootstrap ]]; then
-  echo "\033[0;33mYou already have Oh My Zsh Bootstrap installed.\033[0m You'll need to remove ~/.oh-my-zsh/plugins/custom/oh-my-zsh-bootstrap if you want to install"
+  echo "\033[0;33mYou already have Oh My Zsh Bootstrap installed.\033[0m You'll need to remove ~/.oh-my-zsh/custom/plugins/oh-my-zsh-bootstrap if you want to install"
   exit
 fi
 
