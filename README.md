@@ -19,8 +19,11 @@ With that plugin you can
 
 1. Install [ohmyzsh](https://github.com/robbyrussell/oh-my-zsh/)
 2. Clone Oh My zsh Bootstrap into the custom plugin folder
+    
     git clone git://github.com/mbauhardt/oh-my-zsh-bootstrap.git $HOME/.oh-my-zsh/custom/plugins/oh-my-zsh-bootstrap
+
 3. edit the ~/.zshrc file and add the plugin to the _plugin_ variable
+
     plugins=(oh-my-zsh-bootstrap git)
 
 ## Usage
