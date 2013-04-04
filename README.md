@@ -13,6 +13,8 @@ With that plugin you can
 ## Installation
 ### Automatic Way
 
+    curl -L https://github.com/mbauhardt/oh-my-zsh-bootstrap/raw/master/tools/install.zsh | zsh
+    
 ### Manual Way
 
 ## Usage
