@@ -21,8 +21,7 @@ With that plugin you can
 2. Clone Oh My zsh Bootstrap into the custom plugin folder
     <pre>git clone git://github.com/mbauhardt/oh-my-zsh-bootstrap.git $HOME/.oh-my-zsh/custom/plugins/oh-my-zsh-bootstrap</pre>
 3. edit the ~/.zshrc file and add the plugin to the _plugin_ variable
-
-    plugins=(oh-my-zsh-bootstrap git)
+    <pre>plugins=(oh-my-zsh-bootstrap git)</pre>
 
 ## Usage
 ### List Plugins
