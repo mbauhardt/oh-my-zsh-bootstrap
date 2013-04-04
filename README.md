@@ -14,6 +14,8 @@ With that plugin you can
 ### List Plugins
 
     list_plugins
+    
+With the command above you can list all plugins which exists under $ZSH/plugins or $ZSH_CUSTOM/plugins
 
     list_enabled_plugins
     
