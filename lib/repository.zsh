@@ -41,10 +41,21 @@ list_themes() {
   done
 }
 
+_list_pre_enabled_enabled_plugins() {
+  for plugin ($(_map_keys plugins)); do
+    local enabled=$(_map_get plugins $plugin)
+    if [[ $enabled = "enabled" ]]; then
+      printf "%s " $plugin
+    fi
+  done
+}
+
 list_enabled_plugins() {
   for plugin ($(_map_keys plugins)); do
     local enabled=$(_map_get plugins $plugin)
-    [[ $enabled = "enabled" || $enabled = "pre_enabled" ]] && echo $plugin
+    if [[ $enabled = "pre_enabled" || $enabled = "enabled" ]]; then
+      printf "%-30s \033[0;32m%-10s\033[0m\n" $plugin $enabled
+    fi
   done
 }
 
@@ -69,7 +80,7 @@ disable_plugin() {
 }
 
 _populate_enabled_plugins() {
-  for plugin ($(list_enabled_plugins)); do
+  for plugin ($(_list_pre_enabled_enabled_plugins)); do
     if [[ -f $ZSH/plugins/$plugin/$plugin.plugin.zsh ]]; then
       fpath=($ZSH/plugins/$plugin $fpath)
       source $ZSH/plugins/$plugin/$plugin.plugin.zsh
