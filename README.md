@@ -34,6 +34,8 @@ With the command above you can list all plugins which exists under $ZSH/plugins 
 
     list_enabled_plugins
     
+![List Enabled Plugins](https://dl.dropbox.com/s/zxr9cgunx2jq0yj/list_enabled_plugins.png?token_hash=AAGOZYSNK4cEIabeFoT-jBK9k9Yisu1M2NHLG961-LMrtg&dl=1)    
+    
 ### Enable Plugins
     
     enable_plugin <plugin>
