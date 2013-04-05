@@ -30,7 +30,7 @@ With that plugin you can
     
 With the command above you can list all plugins which exists under $ZSH/plugins or $ZSH_CUSTOM/plugins
 
-<img src="http://sprunge.us/BGif.png"></img>
+![List Plugins](https://www.dropbox.com/s/wymgd4x2yfvciwv/list_plugins.png)
 
     list_enabled_plugins
     
