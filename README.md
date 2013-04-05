@@ -30,6 +30,8 @@ With that plugin you can
     
 With the command above you can list all plugins which exists under $ZSH/plugins or $ZSH_CUSTOM/plugins
 
+![list plugins](http://sprunge.us/BGif)
+
     list_enabled_plugins
     
 ### Enable Plugins
