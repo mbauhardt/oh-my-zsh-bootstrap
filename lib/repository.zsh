@@ -44,7 +44,7 @@ list_themes() {
 list_enabled_plugins() {
   for plugin ($(_map_keys plugins)); do
     local enabled=$(_map_get plugins $plugin)
-    [[ $enabled = "enabled" ]] && echo $plugin
+    [[ $enabled = "enabled" || $enabled = "pre_enabled" ]] && echo $plugin
   done
 }
 
