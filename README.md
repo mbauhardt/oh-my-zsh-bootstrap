@@ -38,9 +38,7 @@ With the command above you can list all plugins which exists under $ZSH/plugins 
     
 ### Enable Plugins
     
-    enable_plugin <plugin>
-    
-You can enable plugin by the command above.
+You can enable a plugin with the command <pre>enable_plugin <plugin></pre>
 
 ![Enable Ant Before](https://dl.dropbox.com/s/tzq9xn28jys3zph/enable_ant_before.png?token_hash=AAGqOMxDHjuZxXLdNdINH-5rDo6S2WdgIyLiqfX7ZvBPVA&dl=1)
 ![Enable Ant After](https://dl.dropbox.com/s/6rtpk0fesbjl3pd/enable_ant_after.png?token_hash=AAFYmAfAL3tnLmG7LjFNfaIN7seM9ayptwB-aaj-3v01aw&dl=1)
