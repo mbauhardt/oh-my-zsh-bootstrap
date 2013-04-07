@@ -1,12 +1,3 @@
-_init_plugins() {
-  local plugin_path=$1
-  for plugin ($plugin_path/*); do
-    local plugin_name=$(basename $plugin)
-    _map_exists plugins $plugin_name
-    [[ $? -ne 0 ]] && _map_put plugins $plugin_name disabled
-  done
-}
-
 _init_theme() {
   _map_exists themes theme
   [[ $? -ne 0 ]] && _map_put themes theme robbyrussell
@@ -19,12 +10,17 @@ _pre_enable_plugins() {
 }
 
 list_plugins() {
-  for plugin ($(_map_keys plugins)); do
-    local enabled=$(_map_get plugins $plugin)
+  for plugin ($ZSH/plugins/* $ZSH_CUSTOM/plugins/*(N)); do
+    local plugin_name=$(basename $plugin)
+    local enabled=disabled
+    _map_exists plugins $plugin_name
+    if [[ $? -eq 0 ]]; then
+      enabled=$(_map_get plugins $plugin_name)
+    fi
     if [[ $enabled = "pre_enabled" || $enabled = "enabled" ]]; then
-      printf "%-30s \033[0;32m%-10s\033[0m\n" $plugin $enabled
+      printf "%-30s \033[0;32m%-10s\033[0m\n" $plugin_name $enabled
     else
-      printf "%-30s \033[0;30m%-10s\033[0m\n" $plugin $enabled
+      printf "%-30s \033[0;30m%-10s\033[0m\n" $plugin_name $enabled
     fi 
   done
 }
@@ -62,6 +58,10 @@ list_enabled_plugins() {
 enable_plugin() {
   [[ "$#" != 1 ]] && return 1
   local plugin=$1
+  _map_exists plugins $plugin
+  if [[ $? -ne 0 ]]; then
+    _map_put plugins $plugin enabled
+  fi
   local enabled=$(_map_get plugins $plugin)
   [[ $enabled = "disabled" ]] && _map_put plugins $plugin enabled
 }
@@ -95,8 +95,7 @@ _populate_enabled_theme() {
   ZSH_THEME=$(_map_get themes theme)
 }
 
-_init_plugins $ZSH/plugins
-_init_plugins $ZSH_CUSTOM/plugins
+
 _pre_enable_plugins
 _populate_enabled_plugins
 _init_theme
