@@ -62,8 +62,6 @@ enable_plugin() {
   if [[ $? -ne 0 ]]; then
     _map_put plugins $plugin enabled
   fi
-  local enabled=$(_map_get plugins $plugin)
-  [[ $enabled = "disabled" ]] && _map_put plugins $plugin enabled
 }
 
 enable_theme() {
