@@ -31,5 +31,10 @@ _map_exists() {
   [[ -f "${mapdir}/${mapname}/${key}" ]] && return 0
 }
 
+_map_remove() {
+  [[ "$#" != 2 ]] && return 1
+  mapname=$1; key=$2
+  rm "${mapdir}/${mapname}/${key}"  
+}
 _map_init
 

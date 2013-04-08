@@ -74,7 +74,7 @@ disable_plugin() {
   [[ "$#" != 1 ]] && return 1
   local plugin=$1
   local enabled=$(_map_get plugins $plugin)
-  [[ $enabled = "enabled" ]] && _map_put plugins $plugin disabled
+  [[ $enabled = "enabled" ]] && _map_remove plugins $plugin
 }
 
 _populate_enabled_plugins() {
