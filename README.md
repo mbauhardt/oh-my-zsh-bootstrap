@@ -57,7 +57,9 @@ After enable <code>enable_plugin ant</code>, list plugins show the new status an
 You can use <code>download_plugin [git.url] [name]</code> to download a plugin from a specific git url.
 The screenshot below show how to download the [Zsh Highlighting PLugin](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-![Download Plugin](https://dl.dropbox.com/s/baobssws5y52kfw/download_plugin.png?token_hash=AAEjtDgnjsJ0mbvB8rxQHl9NFIUVD9hGXpnNOmHcrYvd0Q&dl=1)
+![Download Plugin](https://dl.dropbox.com/s/baobssws5y52kfw/download_plugin_before.png?token_hash=AAEjtDgnjsJ0mbvB8rxQHl9NFIUVD9hGXpnNOmHcrYvd0Q&dl=1)
+
+![Download Plugin After](https://dl.dropbox.com/s/2zbo02szb1y9hp7/download_plugin_after.png?token_hash=AAFEqdLYMMEo7kqqn8mWs1JBkslJcHyS846N_kC0juPfpA&dl=1)
 
 ## Feedback / Contact
 
