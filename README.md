@@ -24,6 +24,8 @@ With that plugin you can
     <pre>plugins=(oh-my-zsh-bootstrap git)</pre>
 
 ## Usage
+
+
 ### List Plugins
     
 With <code>list_plugins</code> you can list all plugins which exists under $ZSH/plugins or $ZSH_CUSTOM/plugins
@@ -34,6 +36,8 @@ With <code>list_plugins</code> you can list all plugins which exists under $ZSH/
     
 ![List Enabled Plugins](https://dl.dropbox.com/s/zxr9cgunx2jq0yj/list_enabled_plugins.png?token_hash=AAGOZYSNK4cEIabeFoT-jBK9k9Yisu1M2NHLG961-LMrtg&dl=1)    
     
+
+
 ### Enable Plugins
     
 You can enable a plugin with  <code>enable_plugin [plugin]</code>. The two screenshots below shows how you can enable the plugin _ant_.
@@ -46,7 +50,11 @@ After enable <code>enable_plugin ant</code>, list plugins show the new status an
 
 ![Enable Ant After](https://dl.dropbox.com/s/6rtpk0fesbjl3pd/enable_ant_after.png?token_hash=AAFYmAfAL3tnLmG7LjFNfaIN7seM9ayptwB-aaj-3v01aw&dl=1)
     
-    download_plugin <url> <name>
+
+
+### Download Plugins
+
+You can use <code>download_plugin [git.url] [name]</code> to download a plugin from a specific git url.
 
 
 ## Feedback / Contact
