@@ -42,7 +42,7 @@ List plugins shows that _ant_ is disabled.
 
 ![Enable Ant Before](https://dl.dropbox.com/s/tzq9xn28jys3zph/enable_ant_before.png?token_hash=AAGqOMxDHjuZxXLdNdINH-5rDo6S2WdgIyLiqfX7ZvBPVA&dl=1)
 
-After enable _ant_, list plugins show the new status and the plugin is included. 
+After enable <code>enable_plugin ant</code>, list plugins show the new status and the plugin is included. 
 
 ![Enable Ant After](https://dl.dropbox.com/s/6rtpk0fesbjl3pd/enable_ant_after.png?token_hash=AAFYmAfAL3tnLmG7LjFNfaIN7seM9ayptwB-aaj-3v01aw&dl=1)
     
