@@ -30,13 +30,13 @@ With <code>list_plugins</code> you can list all plugins which exists under $ZSH/
 
 ![List Plugins](https://dl.dropbox.com/s/wymgd4x2yfvciwv/list_plugins.png?token_hash=AAGGdSyk04b6ZAstcku51-qn98UMmtQYDhJbAPBTxRkzag&dl=1)
 
-    list_enabled_plugins
+<code>list_enabled_plugins</code> list only the enabled plugins
     
 ![List Enabled Plugins](https://dl.dropbox.com/s/zxr9cgunx2jq0yj/list_enabled_plugins.png?token_hash=AAGOZYSNK4cEIabeFoT-jBK9k9Yisu1M2NHLG961-LMrtg&dl=1)    
     
 ### Enable Plugins
     
-You can enable a plugin with the command <code>enable_plugin [plugin]</code>. The two screenshots below shows how you can enable the plugin _ant_.
+You can enable a plugin with  <code>enable_plugin [plugin]</code>. The two screenshots below shows how you can enable the plugin _ant_.
 
 List plugins shows that _ant_ is disabled.
 
