@@ -3,7 +3,7 @@
 _Oh My Zsh Bootstrap_ is a plugin for [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 With that plugin you can
 
-* list plugins
+* <code>list_plugins</code>
 * enable/disable plugins
 * download 3rd party plugins
 * list themes
