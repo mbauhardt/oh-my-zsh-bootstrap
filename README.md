@@ -4,11 +4,12 @@ _Oh My Zsh Bootstrap_ is a plugin for [oh-my-zsh](https://github.com/robbyrussel
 With that plugin you can
 
 * <code>list_plugins</code>
-* enable/disable plugins
-* download 3rd party plugins
-* list themes
-* enable/disable theme
-* download 3rd party themes
+* <code>enable_plugin</code>
+* <code>disable_plugin</code>
+* <code>download_plugin</code>
+* <code>list_themes</code>
+* <code>enable_theme</code>
+* <code>download_plugin</code>
 
 ## Installation
 ### Automatic Way
