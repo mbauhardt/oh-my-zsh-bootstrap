@@ -5,10 +5,10 @@ With that plugin you can
 
 * list plugins
 * enable/disable plugins
-* download plugins
+* download 3rd party plugins
 * list themes
 * enable/disable theme
-* download themes
+* download 3rd party themes
 
 ## Installation
 ### Automatic Way
@@ -25,10 +25,8 @@ With that plugin you can
 
 ## Usage
 ### List Plugins
-
-    list_plugins
     
-With the command above you can list all plugins which exists under $ZSH/plugins or $ZSH_CUSTOM/plugins
+With <code>list_plugins</code> you can list all plugins which exists under $ZSH/plugins or $ZSH_CUSTOM/plugins
 
 ![List Plugins](https://dl.dropbox.com/s/wymgd4x2yfvciwv/list_plugins.png?token_hash=AAGGdSyk04b6ZAstcku51-qn98UMmtQYDhJbAPBTxRkzag&dl=1)
 
