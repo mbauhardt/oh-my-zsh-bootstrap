@@ -64,7 +64,9 @@ The screenshot below show how to download the [Zsh Highlighting PLugin](https://
 
 
 ### List Themes
+
 <code>list_themes</code> list all available themes.
+
 ![List Themes](https://dl.dropboxusercontent.com/s/kdiw20h91relc4n/list_themes.png?token_hash=AAHfRmKp4el2PP4ZIPop6KaPz9jdba65qjm1obIEW1l8Tw&dl=1)
 
 ## Feedback / Contact
