@@ -62,6 +62,11 @@ The screenshot below show how to download the [Zsh Highlighting PLugin](https://
 
 ![Download Plugin After](https://dl.dropbox.com/s/2zbo02szb1y9hp7/download_plugin_after.png?token_hash=AAFEqdLYMMEo7kqqn8mWs1JBkslJcHyS846N_kC0juPfpA&dl=1)
 
+
+### List Themes
+<code>list_themes</code> list all available themes.
+![List Themes](https://dl.dropboxusercontent.com/s/kdiw20h91relc4n/list_themes.png?token_hash=AAHfRmKp4el2PP4ZIPop6KaPz9jdba65qjm1obIEW1l8Tw&dl=1)
+
 ## Feedback / Contact
 
 Please use [Github's Issue Tracker](https://github.com/mbauhardt/oh-my-zsh-bootstrap/issues) or ping me on twitter [@mbauhardt](https://twitter.com/mbauhardt)
