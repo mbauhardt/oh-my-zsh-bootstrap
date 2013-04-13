@@ -70,6 +70,9 @@ The screenshot below show how to download the [Zsh Highlighting PLugin](https://
 ![List Themes](https://dl.dropboxusercontent.com/s/kdiw20h91relc4n/list_themes.png?token_hash=AAHfRmKp4el2PP4ZIPop6KaPz9jdba65qjm1obIEW1l8Tw&dl=1)
 
 
+
+### Enable Theme
+
 To enable a theme you can use the command <code>enable_theme [theme]</code>
 
 ![Enable Theme](https://dl.dropboxusercontent.com/s/wy5bzmq7jirufdd/enable_theme.png?token_hash=AAGTOTYm7zgFnPJW3RgG_cEjr61FvMOLgOIvhxprKhRd7g&dl=1)
