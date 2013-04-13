@@ -9,7 +9,7 @@ _pre_enable_plugins() {
   done
 }
 
-list_plugins() {
+_list_plugins() {
   for plugin ($ZSH/plugins/* $ZSH_CUSTOM/plugins/*(N)); do
     local plugin_name=$(basename $plugin)
     local enabled=disabled
