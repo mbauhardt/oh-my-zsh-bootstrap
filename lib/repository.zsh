@@ -93,6 +93,15 @@ _populate_enabled_theme() {
   ZSH_THEME=$(_map_get themes theme)
 }
 
+update_plugin() {
+  [[ "$#" != 1 ]] && return 1
+  local plugin=$1
+  if [[ -d $ZSH_CUSTOM/plugins/$plugin ]]; then
+    pushd $ZSH_CUSTOM/plugins/$plugin > /dev/null
+    git pull
+    popd > /dev/null
+  fi
+}
 
 _pre_enable_plugins
 _populate_enabled_plugins
