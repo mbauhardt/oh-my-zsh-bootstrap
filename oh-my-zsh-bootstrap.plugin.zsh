@@ -9,3 +9,4 @@ _load_bootstrap() {
 [[ -f $ZSH/plugins/oh-my-zsh-bootstrap/oh-my-zsh-bootstrap.plugin.zsh ]] && _load_bootstrap $ZSH/plugins/oh-my-zsh-bootstrap
 
 alias list_plugins="_list_plugins|less"
+alias list_themes="_list_themes|less"
