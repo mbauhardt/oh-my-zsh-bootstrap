@@ -103,6 +103,18 @@ update_plugin() {
   fi
 }
 
+update_theme() {
+  [[ "$#" != 1 ]] && return 1
+  local theme=$1
+  if [[ -d $ZSH_CUSTOM/themes/$theme ]]; then
+    pushd $ZSH_CUSTOM/themes/$theme > /dev/null
+    git pull
+    popd > /dev/null
+  fi
+}
+
+
+
 _pre_enable_plugins
 _populate_enabled_plugins
 _init_theme
