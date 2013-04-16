@@ -82,9 +82,13 @@ _populate_enabled_plugins() {
     if [[ -f $ZSH/plugins/$plugin/$plugin.plugin.zsh ]]; then
       fpath=($ZSH/plugins/$plugin $fpath)
       source $ZSH/plugins/$plugin/$plugin.plugin.zsh
+    elif [[ -f $ZSH/plugins/$plugin/_$plugin ]]; then
+      fpath=($ZSH/plugins/$plugin $fpath)
     elif [[ -f $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh ]]; then
       fpath=($ZSH_CUSTOM/plugins/$plugin $fpath)
       source $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh
+    elif [[ -f $ZSH_CUSTOM/plugins/$plugin/_$plugin ]]; then
+      fpath=($ZSH_CUSTOM/plugins/$plugin $fpath)
     fi
   done
 }
