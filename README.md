@@ -6,10 +6,10 @@ With that plugin you can
 * <code>list_plugins</code>
 * <code>enable_plugin</code>
 * <code>disable_plugin</code>
-* <code>download_plugin</code>
+* <code>download_and_enable_plugin</code>
 * <code>list_themes</code>
 * <code>enable_theme</code>
-* <code>download_plugin</code>
+* <code>download_and_enable_theme</code>
 
 ## Installation
 ### Automatic Way
