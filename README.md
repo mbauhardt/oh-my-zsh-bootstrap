@@ -10,6 +10,8 @@ With that plugin you can
 * <code>list_themes</code>
 * <code>enable_theme</code>
 * <code>download_and_enable_theme</code>
+* <code>update_plugin</code>
+* <code>update_theme</code>
 
 ## Installation
 ### Automatic Way
