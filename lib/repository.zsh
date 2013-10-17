@@ -46,7 +46,7 @@ _list_pre_enabled_enabled_plugins() {
   done
 }
 
-list_enabled_plugins() {
+_list_enabled_plugins() {
   for plugin ($(_map_keys plugins)); do
     local enabled=$(_map_get plugins $plugin)
     if [[ $enabled = "pre_enabled" || $enabled = "enabled" ]]; then
@@ -55,7 +55,7 @@ list_enabled_plugins() {
   done
 }
 
-enable_plugin() {
+_enable_plugin() {
   [[ "$#" != 1 ]] && return 1
   local plugin=$1
   _map_exists plugins $plugin
@@ -64,13 +64,13 @@ enable_plugin() {
   fi
 }
 
-enable_theme() {
+_enable_theme() {
   [[ "$#" != 1 ]] && return 1
   local theme=$1
   _map_put themes theme $theme
 }
 
-disable_plugin() {
+_disable_plugin() {
   [[ "$#" != 1 ]] && return 1
   local plugin=$1
   local enabled=$(_map_get plugins $plugin)
@@ -97,7 +97,7 @@ _populate_enabled_theme() {
   ZSH_THEME=$(_map_get themes theme)
 }
 
-update_plugin() {
+_update_plugin() {
   [[ "$#" != 1 ]] && return 1
   local plugin=$1
   if [[ -d $ZSH_CUSTOM/plugins/$plugin ]]; then
@@ -107,7 +107,7 @@ update_plugin() {
   fi
 }
 
-update_theme() {
+_update_theme() {
   [[ "$#" != 1 ]] && return 1
   local theme=$1
   if [[ -d $ZSH_CUSTOM/themes/$theme ]]; then
